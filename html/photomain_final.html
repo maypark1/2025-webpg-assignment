@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YURA NEKO</title>
+        <link rel="stylesheet" href="../css/photostyle.css">
+    </head>
+
+    <body>
+
+
+      <!--메인 콘텐츠 영역-->
+      <div class="main-container loading">
+        <article class="main-section">
+            <!-- fade 효과용 배경 레이어 -->
+      <div class="bg-fade" id="bgFade"></div>
+            <div class="tour-select">
+                <div class="tour-title first">
+                    <a href="photosub_final1.html" class="tour-link 1" target="_self">The Artificial Tears World Tour</a>
+                </div>
+                <div class="tour-title second">
+                   <a href="photosub_final2.html" class="tour-link 2" target="_self">502: BAD GATEWAY TOUR</a>
+                </div>
+                <div class="tour-title third" >
+                    <a href="photosub_final3.html" class="tour-link 3" target="_self">The Blue Pupil Tour</a>
+                </div>
+            </div>
+        </article>
+        </div>
+        <!-- JavaScript 배경 페이드 효과 -->
+  <script>
+    const bgFade = document.getElementById('bgFade');
+
+    const tourImages = {
+      'first': "../asset/concert1.jpg",
+      'second': "../asset/concert2.jpg",
+      'third': "../asset/concert3.jpg"
+    };
+
+    document.querySelectorAll('.tour-title').forEach(title => {
+      title.addEventListener('mouseenter', () => {
+        const key = Array.from(title.classList).find(cls => tourImages[cls]);
+        if (key) {
+          // 페이드 아웃 → 이미지 교체 → 페이드 아웃
+          bgFade.style.opacity = '0';
+          setTimeout(() => {
+            bgFade.style.backgroundImage = `url('${tourImages[key]}')`;
+            bgFade.style.opacity = '1';
+          }, 200);
+        }
+      });
+
+      title.addEventListener('mouseleave', () => {
+        bgFade.style.opacity = '0';
+        
+      });
+    });
+  </script>
+    </body>
+</html>
