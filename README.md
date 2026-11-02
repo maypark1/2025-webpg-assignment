@@ -43,7 +43,7 @@
 ## Project Structure
 
 ```text
-2025-webpg-dongyang-/
+2025-webpg-assignment/
 ├── index.html
 ├── asset/                         # 이미지, 영상 및 기타 리소스
 ├── css/
@@ -75,13 +75,13 @@
 **1. 저장소 복제**
 
 ```bash
-git clone https://github.com/maypark1/2025-webpg-dongyang-.git
+git clone https://github.com/maypark1/2025-webpg-assignment.git
 ```
 
 **2. 프로젝트 폴더 이동**
 
 ```bash
-cd 2025-webpg-dongyang-
+cd 2025-webpg-assignment
 ```
 
 **3. 실행**
@@ -127,7 +127,7 @@ cd 2025-webpg-dongyang-
 - **진행 연도:** 2025
 - **프로젝트 유형:** 웹 프로그래밍 팀 프로젝트
 - **개발 방식:** HTML / CSS / Vanilla JavaScript
-- **Repository:** https://github.com/maypark1/2025-webpg-dongyang-
+- **Repository:** https://github.com/maypark1/2025-webpg-assignment
 
 ---
 
